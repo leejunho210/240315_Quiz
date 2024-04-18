@@ -1,10 +1,13 @@
-a = input("점수를 입력하시오:")
+score_str = input("점수를 입력하세요: ")
+score = int(score_str)  # 문자열을 숫자로 변환
 
-if int(a)>=71 :
-    print("A")
-elif int(a)>=41 and int(a)<=70 :
-    print("B")
-elif int(a)>=11 and int(a)<=40 :
-    print(C)
+if score <= 10:
+    result = 'D'
+elif score <= 40:
+    result = 'C'
+elif score <= 70:
+    result = 'B'
 else:
-    print("D")
+    result = 'A'
+
+print(result)
